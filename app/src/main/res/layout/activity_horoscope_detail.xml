@@ -8,22 +8,55 @@
     tools:context=".ui.detail.HoroscopeDetailActivity">
 
     <ImageView
-        android:id="@+id/ivDetail"
+        android:id="@+id/ivHoroscopeDetail"
         android:layout_width="0dp"
         android:layout_height="300dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/detail_aquarius"
-        tools:background="@color/red" />
+        tools:src="@drawable/detail_aquarius" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/gold" />
 
     <TextView
-        android:id="@id/tvTitle"
+        android:id="@+id/tvTitleHoroscopeDetail"
+        style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivDetail"
-        tools:text="BUENAS !"/>
+        app:layout_constraintTop_toBottomOf="@id/ivHoroscopeDetail"
+        tools:text="BUENAS !" />
+
+    <TextView
+        android:id="@+id/tvBodyHoroscopeDetail"
+        style="@style/Body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleHoroscopeDetail"
+        tools:text="@string/Lorem_ipsum" />
+
+    <ProgressBar
+        android:id="@+id/pbHoroscopeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleHoroscopeDetail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,11 @@
     <string name="app_name">HoroscApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!--Personal-->
 
+    <string name="Lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo vel nisi imperdiet congue. Duis at ex eget mi dignissim pulvinar. Nulla facilisi. Integer ultrices vehicula nisl, at tincidunt libero ullamcorper vel. Suspendisse potenti. Vivamus vel elit quis elit laoreet imperdiet. Proin eu metus nec velit tincidunt volutpat. Ut euismod lacinia nulla, id blandit nulla. Sed auctor, sem sit amet vestibulum accumsan, justo velit eleifend tortor, id rhoncus ligula libero vel justo. Maecenas et rhoncus lectus. Nunc id neque in erat ultricies scelerisque. Sed varius, nunc nec scelerisque fermentum, lectus dolor aliquet justo, nec fermentum risus elit a purus. Suspendisse potenti. Sed vel eros nec justo feugiat varius.</string>
+    
     <!--BottomBar-->
     <string name="horoscope">Horoscope</string>
     <string name="palmistry">Palmistry</string>
@@ -21,5 +25,7 @@
     <string name="capricorn">Capricorn</string>
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
+    
+    
 
 </resources>
