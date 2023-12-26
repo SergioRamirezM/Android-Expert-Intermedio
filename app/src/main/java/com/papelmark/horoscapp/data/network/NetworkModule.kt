@@ -1,5 +1,7 @@
 package com.papelmark.horoscapp.data.network
 
+import com.papelmark.horoscapp.BuildConfig
+import com.papelmark.horoscapp.BuildConfig.BASE_URl
 import com.papelmark.horoscapp.data.RepositoryImpl
 import com.papelmark.horoscapp.data.core.interceptors.AuthInterceptor
 import com.papelmark.horoscapp.domain.Repository
@@ -22,7 +24,7 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("https://newastro.vercel.app/")
+            .baseUrl(BASE_URl)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
