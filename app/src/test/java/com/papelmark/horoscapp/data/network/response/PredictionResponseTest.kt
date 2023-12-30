@@ -2,7 +2,6 @@ package com.papelmark.horoscapp.data.network.response
 
 import com.papelmark.horoscapp.motherobject.HoroscopeMotherObject.anyResponse
 import io.kotlintest.shouldBe
-import org.junit.Assert.*
 import org.junit.Test
 
 class PredictionResponseTest{

@@ -1,7 +1,6 @@
 package com.papelmark.horoscapp.motherobject
 
 import com.papelmark.horoscapp.data.network.response.PredictionResponse
-import com.papelmark.horoscapp.domain.model.HoroscopeInfo
 import com.papelmark.horoscapp.domain.model.HoroscopeInfo.*
 
 object HoroscopeMotherObject {

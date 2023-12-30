@@ -2,11 +2,9 @@ package com.papelmark.horoscapp.ui.horoscope
 
 import com.papelmark.horoscapp.data.providers.HoroscopeProvider
 import com.papelmark.horoscapp.motherobject.HoroscopeMotherObject.horoscopeInfoList
-import io.kotlintest.inspectors.forExactly
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
-import io.mockk.verify
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
