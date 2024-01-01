@@ -3,6 +3,25 @@
   <component name="deploymentTargetDropDown">
     <value>
       <entry key="app">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\sergi\.android\avd\Pixel_7_API_28.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-01-01T20:30:46.731166200Z" />
+        </State>
+      </entry>
+      <entry key="when_horoscope_is_selected_then_open_detail()">
+        <State />
+      </entry>
+      <entry key="when_mainactivity_is_created_then_open_luck_fragment()">
         <State />
       </entry>
     </value>
