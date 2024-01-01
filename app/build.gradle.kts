@@ -17,7 +17,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.papelmark.horoscapp.CustomTestRunner"
     }
 
     buildTypes {
@@ -28,13 +28,16 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URl", "\"https://newastro.vercel.app/\"")
+
             resValue("string", "sergioname", "HoroscApp")
+
+            buildConfigField("String", "BASE_URl", "\"https://newastro.vercel.app/\"")
+            signingConfig = signingConfigs.getByName("debug")
         }
         getByName("debug") {
             isDebuggable = true
-            buildConfigField("String", "BASE_URl", "\"https://newastro-debug.vercel.app/\"")
             resValue("string", "sergioname", "[DEBUG] HoroscApp")
+            buildConfigField("String", "BASE_URl", "\"https://newastro-debug.vercel.app/\"")
         }
 
     }
@@ -45,18 +48,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
+    buildFeatures{
         viewBinding = true
         buildConfig = true
-    }
-    kotlin {
-        jvmToolchain(8)
     }
 }
 
 dependencies {
 
-    testImplementation("junit:junit:4.12")
     val navVersion = "2.7.1"
     val daggerVersion = "2.48"
     val retrofitVersion = "2.9.0"
@@ -92,6 +91,12 @@ dependencies {
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
     testImplementation("io.mockk:mockk:1.12.3")
 
+    //UITesting
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
+    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.4.0")
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.48")
+    androidTestImplementation ("androidx.fragment:fragment-testing:1.6.1")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
 }
